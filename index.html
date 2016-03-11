@@ -1,5 +1,4 @@
 ﻿
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
     <head>
@@ -60,11 +59,11 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#home">О Нас</a></li>
-                        <li><a href="#features-section">Наши услуги</a></li>
-                        <li><a href="#portfolio-section">Проекты</a></li>
-                        <li><a href="#pricing-section">Карьера</a></li>
-                        <li><a href="#contact-section">Контакты</a></li>
+                        <li><a href="#home" class="navitem">О Нас</a></li>
+                        <li><a href="#features-section" class="navitem" >Наши услуги</a></li>
+                        <li><a href="#portfolio-section" class="navitem">Проекты</a></li>
+                        <li><a href="#pricing-section" class="navitem">Карьера</a></li>
+                        <li><a href="#contact-section" class="navitem" >Контакты</a></li>
                     </ul>
                 </div> 
             </div>
@@ -202,41 +201,69 @@
         
 		<div class="product-container product-bg2">
 	        <div class="container">
-	            <div class="row">
+	            <div class="row equal">
 
-				<div class="col-lg-6 col-sm-6">
+				<div class="col-lg-6 col-sm-6 col-xs-6">
 					<div class="productbox">
 						<div>
-	                		<i data-type="service"></i>
+	                		<!--i data-type="service" ></i-->
+							<div class="col-md-3 col-xs-4 col-sm-4">
+								<img src="assets/img/icons/phone.png">
+							</div>
+							<div class="col-md-9 col-xs-8 col-sm-8">
+							<h5>Сервис</h5>
+								</div>
 						</div>
-						<h5>Сервис</h5>
-						Мы нацелены на долгосрочные отношения с клиентами, основанные на взаимном доверии и уважении. Мы стараемся выстраивать длительные доверительные отношения и уважаем каждого клиента.
-					</div>
-					
-					<div class="productbox">
-						<div>
-	                		<i class="icon ion-android-checkbox-outline"></i>
-						</div>
-						<h5>Качество</h5>
-						Мы не боимся брать проекты любой сложности и доводить их до ума.
+
+						<p>Мы нацелены на долгосрочные отношения с клиентами, основанные на взаимном доверии и уважении. Мы стараемся выстраивать длительные доверительные отношения и уважаем каждого клиента.</p>
 					</div>
 				</div>
-				
-				<div class="col-lg-6 col-sm-6">
+				<div class="col-lg-6 col-sm-6 col-xs-6">
 					<div class="productbox">
 						<div>
-	                		<i class="icon ion-ios-people"></i>
+	                		<!--i class="icon ion-android-checkbox-outline"></i-->
+							<div class="col-md-3 col-xs-4 col-sm-4">
+								<img src="assets/img/icons/okay.png">
+							</div>
+							<div class="col-md-9 col-xs-8 col-sm-8">
+							<h5>Качество</h5>
+								</div>
 						</div>
-						<h5>Команда</h5>
-						Наша команда состоит из высококвалифицированных специалистов, имеющих опыт работы в крупнейших компаниях страны
+
+						<p>Мы не боимся брать проекты любой сложности и доводить их до ума.</p>
 					</div>
-					
+				</div>
+					</div>
+					<div class="row equal">
+				<div class="col-lg-6 col-sm-6 col-xs-6">
 					<div class="productbox">
 						<div>
-	                		<i class="icon ion-android-bulb"></i>
+	                		<!--i class="icon ion-ios-people"></i-->
+							<div class="col-md-3 col-xs-4 col-sm-4">
+								<img src="assets/img/icons/contacts.png">
+							</div>
+							<div class="col-md-9 col-xs-8 col-sm-8">
+							<h5>Команда</h5>
+								</div>
 						</div>
-						<h5>Прогрессивность</h5>
-						Мы следим за трендами в сфере IT и используем новые технологии в своих проектах.
+
+						<p>Наша команда состоит из высококвалифицированных специалистов, имеющих опыт работы в крупнейших компаниях страны</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-sm-6 col-xs-6">
+
+					<div class="productbox">
+						<div class="prb">
+	                		<!--i class="icon ion-android-bulb"></i-->
+							<div class="col-md-3 col-xs-4 col-sm-4">
+								<img src="assets/img/icons/idea.png">
+							</div>
+							<div class="col-md-9 col-xs-8 col-sm-8">
+								<h5>Прогрессивность</h5>
+							</div>
+						</div>
+
+						<p>Мы следим за трендами в сфере IT и используем новые технологии в своих проектах.</p>
 					</div>
 					
 				</div>
@@ -383,80 +410,77 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4 toLeft">
+
+				<div class="col-md-4 toLeft panel-group" id="accordion">
 					<div class="price-column">
-						<h2>Менеджер по проектам</h2>
-						<h3><span>Должностные обязанности</span></h3>
-						<ul>
-						<table>
-							<tr><td class="minitd">
-								<li>Контроль качества выполненных работ</li>
-							</td></tr>
-							<tr><td class="minitd">
-								<li>Координация исполнителей и клиентов</li>
-							</td></tr>
-							<tr><td class="minitd">
-								<li>Ведение проектов в рамках утвержденных сроков и бюджета</li>
-							</td></tr>
-							<tr><td class="minitd"></td></tr>
-							<tr><td class="bigtd">
-								<li><a href="#contact-section" class="btn btn-top btn-lg">Оставить отклик</a></li>
-							</td></tr>
-						</table>
-						</ul>						
+						<h2 data-toggle="collapse" data-parent="#accordion" href="#collapse1">Менеджер по проектам</h2>
+						<div id="collapse1" class="collapse in">
+								<h3><span>Должностные обязанности</span></h3>
+								<ul>
+									<table>
+										<tr><td class="minitd">
+											<li>Контроль качества выполненных работ</li>
+										</td></tr>
+										<tr><td class="minitd">
+											<li>Координация исполнителей и клиентов</li>
+										</td></tr>
+										<tr><td class="minitd">
+											<li>Ведение проектов в рамках утвержденных сроков и бюджета</li>
+										</td></tr>
+										<tr><td class="minitd"></td></tr>
+										<tr><td class="bigtd">
+											<li><a href="#contact-section" class="btn btn-top btn-lg">Оставить отклик</a></li>
+										</td></tr>
+									</table>
+								</ul>
+						</div>
 					</div>
 				</div>
+
+
+
 				<div class="col-md-4 toIn">
 					<div class="price-column large">
-						<h2>Менеджер по продажам</h2>
-						<h3><span>Должностные обязанности</span></h3>
-						<ul>
-
-
-						<table>
-							<tr><td class="minitd"><li>Увеличение продаж в своем секторе</li></td></tr>
-							<tr><td class="minitd"><li>Поиск и привлечение новых клиентов</li></td></tr>
-							<tr><td class="minitd"><li>Поддержание взаимоотношений с наработанной базой</li></td></tr>
-							<tr><td class="minitd"><li>Холодные звонки</li></td></tr>
-							<tr><td class="bigtd"><li><a href="#contact-section" class="btn btn-top btn-lg">Оставить отклик</a></li></td></tr>
-						</table>
-							
-							
-							
-							
-						
-						</ul>
+						<h2  data-toggle="collapse" data-parent="#accordion" href="#collapse2">Менеджер по продажам</h2>
+						<div id="collapse2" class="collapse in">
+							<h3><span>Должностные обязанности</span></h3>
+							<ul>
+							<table>
+								<tr><td class="minitd"><li>Увеличение продаж в своем секторе</li></td></tr>
+								<tr><td class="minitd"><li>Поиск и привлечение новых клиентов</li></td></tr>
+								<tr><td class="minitd"><li>Поддержание взаимоотношений с наработанной базой</li></td></tr>
+								<tr><td class="minitd"><li>Холодные звонки</li></td></tr>
+								<tr><td class="bigtd"><li><a href="#contact-section" class="btn btn-top btn-lg">Оставить отклик</a></li></td></tr>
+							</table>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-4 toRight">
 					<div class="price-column">
-						<h2>Программист-разработчик</h2>
-						<h3><span>Должностные обязанности</span></h3>
-						<ul>
-						<table>
-							<tr><td class="minitd">
-								<li>Проектирование и разработка нового программного обеспечения</li>
-							</td></tr>
-							<tr><td class="minitd">
-								<li>Сопровождение и техподдержка проектов компании</li>
-							</td></tr>
-							<tr><td class="minitd">
-								<li>Внедрение программного обеспечения</li>
-							</td></tr>
-							<tr><td class="minitd">
-								<li>Верстка веб-приложений и сайтов</li>
-							</td></tr>
-							<tr><td class="bigtd">
-								<li><a href="#contact-section" class="btn btn-top btn-lg">Оставить отклик</a></li>
-							</td></tr>
-						</table>
-							
-							
-							
-														
-						
-						</ul>
-
+						<h2 data-toggle="collapse" data-parent="#accordion" href="#collapse3">Программист-разработчик</h2>
+						<div id="collapse3" class="collapse in">
+							<h3><span>Должностные обязанности</span></h3>
+							<ul>
+							<table>
+								<tr><td class="minitd">
+									<li>Проектирование и разработка нового ПО</li>
+								</td></tr>
+								<tr><td class="minitd">
+									<li>Сопровождение и техподдержка проектов компании</li>
+								</td></tr>
+								<tr><td class="minitd">
+									<li>Внедрение программного обеспечения</li>
+								</td></tr>
+								<tr><td class="minitd">
+									<li>Верстка веб-приложений и сайтов</li>
+								</td></tr>
+								<tr><td class="bigtd">
+									<li><a href="#contact-section" class="btn btn-top btn-lg">Оставить отклик</a></li>
+								</td></tr>
+							</table>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
