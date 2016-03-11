@@ -1,5 +1,6 @@
 /***** General *****/
 
+html{font-size:100%;}
 body {
     background: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -1237,6 +1238,20 @@ color: #888;
 	font-size: 16px;
     line-height: 24px;
 }
+#CarouselPortfolio .item{
+    width: 100%;
+    height: 400px;
+    background-color: #FFFFFF;
+    padding-top: 5%;
+}
+#CarouselPortfolio img{
+    margin:auto;
+    /*padding-bottom: 5%;*/
+    width: 40%;
+    height: 100%;
+    max-height: 80%;
+    max-width: 50%;
+}
 
 .cbp-l-filters-work .cbp-filter-item {
   /* @editable properties */
@@ -1477,15 +1492,17 @@ color: #888;
 .testimonials h3 {
     font-family: 'Open Sans', sans-serif;
     padding-bottom: 10px;
-    font-size: 32px;
-    font-weight: 300;
+    font-size:28px;
     color: #555;
     line-height: 2;
+    text-align: center;
 }
 
 .testimonials .item {
-    width: 1100px;
-    height: 400px;
+    width: 70%;
+    height: 420px;
+    margin-left: 12%;
+    max-height: 60%;
     background-color: #FFFFFF;
     padding-top: 5%;
 }
@@ -1830,7 +1847,17 @@ color: #0dc0c0;
 .video-iframe {
   height: 400px;
 }
+.testimonials .item{
+    height: 220px;
+    width:70%;
+}
+.testimonials h3{
+    font-size: 12px;
+}
+#CarouselPortfolio .item{
 
+    height: 200px;
+}
 }
 
 @media (max-width: 540px) {
