@@ -8,7 +8,7 @@ $(document).ready(function() {
 		}).done(function() {
 			$(this).find("input").val("");
 			$("#message").trigger("reset");
-			$('#alertsuccess').show();
+			// $('#alertsuccess').show();
 		});
 		return false;
 	});
