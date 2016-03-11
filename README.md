@@ -1,0 +1,2 @@
+# inlife.kz
+base site
