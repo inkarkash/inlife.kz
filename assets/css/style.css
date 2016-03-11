@@ -1031,28 +1031,35 @@ color: #888;
 }
 
 .productbox {
-		padding-left: 65px;
-        padding-right:65px;
+		padding-left: 14%;
+        padding-right: 14%;
 		position: relative;
 		margin-bottom: 60px;
+        text-align: justify;
 	}
-	
+.productbox p{
+    padding-top: 15%;
+}
+
 	
 .productbox div {
-		position: absolute;
-		width: 36px;
-		height: 36px;
-		left: 20px;
-		line-height: 36px;
-		text-align: center;
-		font-size: 30px;
-		color: #009ca8 !important;
+    display: inline;
+    float: left;
+    text-align: left;
+    color: #009ca8 !important;
     -o-transition: all .3s;
     -moz-transition: all .3s;
     -webkit-transition: all .3s;
     -ms-transition: all .3s;
     transition: all .3s;
 	}
+.productbox img{
+    position: relative;
+    width: 66%;
+}
+.productbox h5{
+    margin-left: -10%;
+}
 .productbox:hover div {
 		color: #0dc0c0 !important;
 }
@@ -1136,7 +1143,7 @@ color: #888;
 .price-column h2 {
     line-height: 1;
 	color:#fff;
-	font-size:32px;
+	font-size:200%;
 	text-align:center;
 	background: #585a5e;
 	margin-bottom: 0;
@@ -1144,12 +1151,13 @@ color: #888;
 	font-weight: 400;
     font-family: 'Dosis', sans-serif;
 }
-
+.price-column h2:hover {
+    background: #323741;
+}
 .price-column h3 {
 	color:#555;
 	background: #f0f0f0;
 	text-align:center;
-	font-size: 40px;
 	margin-bottom: 0;
 	margin-top: 0;
 	padding: 40px 0;
@@ -1160,7 +1168,7 @@ color: #888;
 
 .price-column h3 span {
 	font-weight: 400;
-	font-size: 18px;
+    font-size: 60%;
 	}
 
 .price-column ul {
@@ -1191,6 +1199,9 @@ color: #888;
 .price-column.large h2 {
 	padding: 30px 0;
 	background: #0DC0C0;
+}
+.price-column.large h2:hover {
+    background: #323741;
 }
 
 .price-column.large h3 {
@@ -1708,6 +1719,7 @@ color: #0dc0c0;
 }
 
 @media (max-width: 991px) {
+
 
 }
 

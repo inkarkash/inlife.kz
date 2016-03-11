@@ -1,6 +1,11 @@
 
 jQuery(document).ready(function() {
 
+	$('.navitem').click(function(){
+		$('.navbar-collapse').removeClass('in');
+		$('.navbar-collapse').attr('aria-expanded','false');
+	});
+
 	//*****  STYLE SWITCHER  *****//
 
 	$(".style1" ).click(function(){
