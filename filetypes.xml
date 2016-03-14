@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="16">
     <extensionMap>
+      <mapping pattern="main" type="CSS" />
       <mapping pattern="pagination" type="JavaScript" />
     </extensionMap>
   </component>
