@@ -493,6 +493,7 @@ color: #888;
 .features-box ul li{
     color:#888;
     text-align:justify;
+    padding:5%;
 }
 
 
@@ -1582,11 +1583,10 @@ color: #0dc0c0;
 
 
 .mobileicons{
-    background-image: url(./img/icons/phone.png);
+    background-image: url(/assets/img/icons/phone.png);
     background-repeat: no-repeat;
     background-size: 10px;
     width: 10px;
     height: 10px;
     cursor: pointer;
-
 }
