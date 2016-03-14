@@ -99,15 +99,6 @@ a, a:hover, a:focus {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 
-.features-box1 .icon i, .features-box2 .icon i, .features-box3 .icon i, .features-box4 .icon i, .features-box5 .icon i, .features-box6 .icon i{
-	color: #009ca8;
-}
-
-
-.features-box1:hover .icon i, .features-box2:hover .icon i, .features-box3:hover .icon i, .features-box4:hover .icon i, .features-box5:hover .icon i, .features-box6:hover .icon i{
-	color: #0dc0c0;
-}
-
 	.productbox div {
 		color: #009ca8 !important;
 	}
