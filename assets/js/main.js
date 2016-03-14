@@ -54,7 +54,7 @@ jQuery(document).ready(function() {
 	});
 
 
-	// Style Switcher	
+	// Style Switcher
 	$('#style-switcher').animate({
 		left: '-150px'
 	});
@@ -66,7 +66,7 @@ jQuery(document).ready(function() {
 		if (div.css('left') === '-150px') {
 			$('#style-switcher').animate({
 				left: '0px'
-			}); 
+			});
 		} else {
 			$('#style-switcher').animate({
 				left: '-150px'
@@ -88,11 +88,14 @@ jQuery(document).ready(function() {
 		$('a[href*=#]').bind("click", function(e){
 			var anchor = $(this);
 			$('html, body').stop().animate({
-				scrollTop: $(anchor.attr('href')).offset().top - 50
+				scrollTop: $(anchor.attr('href')).offset().top-70
 			}, 1500);
 			e.preventDefault();
 		});
 
+	if($(window).scrollTop()>100){
+		$('.menu-top').addClass('menu-shrink');
+	}
     $(window).scroll(function() {
       if ($(this).scrollTop() > 100) {
         $('.menu-top').addClass('menu-shrink');
@@ -102,17 +105,17 @@ jQuery(document).ready(function() {
     });
 
 		$(document).on('click','.navbar-collapse.in',function(e) {
-			if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+			if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ){
 				$(this).collapse('hide');
 			}
 		});
 
 
-	
-   
+
+
 
 /***** Contact form *****/
-	    
+
     $('.contact-form form input[type="text"], .contact-form form textarea').on('focus', function() {
     	$('.contact-form form input[type="text"], .contact-form form textarea').removeClass('contact-error');
     });
@@ -144,6 +147,6 @@ jQuery(document).ready(function() {
 	    });
 	});
 
-    
+
 });
 
