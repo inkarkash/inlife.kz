@@ -484,7 +484,7 @@ color: #888;
     transition: all .3s;
 }
 .features-box p{
-    text-align: justify;
+    text-align: left;
 }
 
 .features-box ul{
@@ -492,7 +492,7 @@ color: #888;
 }
 .features-box ul li{
     color:#888;
-    text-align:justify;
+    text-align:left;
     padding:5%;
 }
 
@@ -759,7 +759,6 @@ color: #888;
     height: 100px;
     background: #585a5e;
     padding-top: 2%;
-
 }
 .price-column h2 {
     line-height: 1;
@@ -767,16 +766,17 @@ color: #888;
 	font-size:200%;
 	text-align:center;
 	/*padding:30px 0;*/
+    padding: 10px 0;
 	font-weight: 400;
     font-family: 'Dosis', sans-serif;
 }
 .price-column .collapseprice:hover {
     background: #323741;
 }
-#collapsepricemiddle{
+.collapsepricemiddle{
     background: #0DC0C0;
 }
-#collapsepricemiddle:hover{
+.collapsepricemiddle:hover{
     background: #323741;
 }
 .price-column .collapseprice:hover {
@@ -810,6 +810,8 @@ color: #888;
 	color:#888;
 	font-weight: 400;
 	padding:18px 0;
+    height: 100px;
+    vert-align: middle;
 	}
 	
 .price-column li:first-child {
@@ -865,20 +867,30 @@ color: #888;
 	font-size: 16px;
     line-height: 24px;
 }
+#CarouselPortfolio{
+    height: 100%;
+}
 #CarouselPortfolio .item{
     width: 100%;
-    height: 400px;
+    height: 90%;
     background-color: #FFFFFF;
     padding-top: 5%;
 }
+#CarouselPortfolio #reone{
+    max-width: 38%;
+}
+#CarouselPortfolio #ilesu{
+    max-width: 39%;
+}
+#CarouselPortfolio #crm{
+    max-width: 45%;
+}
 #CarouselPortfolio img{
     margin:auto;
-    /*padding-bottom: 5%;*/
-    width: 40%;
-    height: 100%;
     max-height: 80%;
     max-width: 50%;
 }
+
 
 .cbp-l-filters-work .cbp-filter-item {
   /* @editable properties */
@@ -1358,15 +1370,71 @@ color: #0dc0c0;
 }
 
 }
+.bottom_align{
+    position: absolute;
+    bottom: 2%;
+    width: 96%;
+}
+.equal, .equal > div[class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex:1 0 auto;
+}
 
 @media (max-width: 991px) {
+    .price-column h2 {
+        line-height: 1;
+        /*color:#fff;*/
+        font-size:150%;
+        text-align:center;
+        /*padding:30px 0;*/
+        font-weight: 400;
+        font-family: 'Dosis', sans-serif;
+    }
+    .price-column h3 {
+        padding: 20px 0;
+        font-size: 20px;
+    }
+    .collapseprice{
+        height: 70px;
+    }
+    .btn-top{
+        margin: 0;
+        font-size: 90%;
+        height: 50%;
+        padding: 0 0%;
+        line-height: 30px;
+        width: 100%;
+    }
 
 
 }
 @media (min-width: 768px){
+    #vacancies_xs{
+        display: none !important;
+    }
 }
 
 @media (max-width: 767px) {
+    #vacancies_lg{
+        display: none !important;
+    }
+    #vacancies_xs{
+        display: inline !important;
+    }
+    .bottom_align{
+        position: absolute;
+        bottom: 2%;
+        width: 90%;
+        left: 5%;
+    }
+    .price-column h2 {
+        font-size:120%;
+    }
+    .price-column li{
+        height: 70px;
+    }
     .productbox h5{
         margin-left: -20%;
         margin-top: 8%;
@@ -1488,8 +1556,7 @@ color: #0dc0c0;
     font-size: 12px;
 }
 #CarouselPortfolio .item{
-
-    height: 200px;
+    height: 100%;
 }
 }
 
